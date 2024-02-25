@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/global.css">
+    <link rel="stylesheet" href="src/assets/font/MolexShoora-Bold.otf">
+      <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Document</title>
+    <style>
+   @keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee2 {
+  animation: marquee2 25s linear infinite;
+}
+    /* Menambahkan font custom */
+    @font-face {
+            font-family: 'MolexShoora-Bold';
+            src: url('src/assets/font/MolexShoora-Bold.otf') format('opentype');
+        }
+
+        .MolexShoora-Bold {
+            font-family: 'MolexShoora-Bold';
+        }
+
+      </style>
+
+</head>
+<body>
+    <div class="relative flex  ">
+        <!-- <div class="py-12 animate-marquee whitespace-nowrap">
+            <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">
+            <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">
+            <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">
+            <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">
+        
+        </div>
+      
+        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+            <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">
+            <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">
+            <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">
+            <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">
+        </div> -->
+
+        <div class="absolute top-0 py-12 animate-marquee whitespace-nowrap overflow-x-hidden">
+           <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">   
+        </div>
+        <div class="absolute top-0 py-12 animate-marquee whitespace-nowrap overflow-x-hidden">
+           <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">   
+        </div>
+        <div class="absolute top-0 py-12 animate-marquee whitespace-nowrap overflow-x-hidden">
+           <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">   
+        </div>
+        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap overflow-x-hidden">
+           <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">   
+        </div>
+        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap overflow-x-hidden">
+           <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">   
+        </div>
+        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap overflow-x-hidden">
+           <img src="src/assets/image/namaImg.svg" alt="" class="mx-4">   
+        </div>
+
+      </div>
+      
+</body>
+</html>

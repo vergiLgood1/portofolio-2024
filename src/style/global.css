@@ -22,7 +22,7 @@ body {
     font-family: monospace system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
     
     background-color: #EBEBEB;
-    background-image: url(/src/assets/images/638954a05e4c1906e9d38ae6_GRID\ ILLUSTRATION\ \(2\)\ 1.png);
+    background-image: url(/src/assets/image/grid.png);
 }
 
 nav {
@@ -53,4 +53,5 @@ nav {
         text-align: left;
     }
 }
+
 
