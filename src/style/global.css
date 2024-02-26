@@ -54,4 +54,73 @@ nav {
     }
 }
 
+  .animate-marquee {
+    animation: marquee 6s linear infinite;
+    -webkit-animation: marquee 6s linear infinite;
+}
 
+  .animate-marquee2 {
+    animation: marquee2 6s linear infinite;
+    -webkit-animation: marquee2 s linear infinite;
+}
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slideInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    40% {
+      opacity: 0;
+      transform: translateY(-80%);
+    }
+    80% {
+      opacity: 1;
+      transform: translateY(-40%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDownThroughBorder {
+    0% {
+      transform: translateY(-100%);
+    }
+    40% {
+      transform: translateY(-80%);
+    }
+    80% {
+      transform: translateY(-40%);
+    }
+    100% {
+      transform: translateY(40%);
+    }
+  }
+  
+
+  .animate-arrow {
+    animation: slideInFromTop 2s ease-in-out infinite, slideDownThroughBorder 2s ease-in-out infinite;
+    -webkit-animation: slideInFromTop 2s ease-in-out infinite, slideDownThroughBorder 2s ease-in-out infinite;
+}
+  
