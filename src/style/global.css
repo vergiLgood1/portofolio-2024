@@ -205,24 +205,6 @@ nav {
 
 
 
-    .about-animation {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      opacity: 0;
-      transform: translateY(100%);
-      animation: slide-in-up 0.5s forwards;
-      -webkit-animation: slide-in-up 0.5s forwards;
-}
-
-  @keyframes slide-in-up1 {
-      to {
-          opacity: 1;
-          transform: translateY(0);
-          -webkit-transform: translateY(0);
-          -moz-transform: translateY(0);
-          -ms-transform: translateY(0);
-          -o-transform: translateY(0);
-}
-  }
 
 
   .about-animation {
@@ -263,4 +245,35 @@ nav {
       bottom: 0; /* End position (center of the container) */
     }
   }
-  
+
+
+  .about-animation-gif{
+    opacity: 0;
+    position: relative;
+    animation: slide-in-right 3s ease forwards;
+    -webkit-animation: slide-in-right 3s ease forwards;
+}
+
+
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+}
+    to {
+      opacity: 1;
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+}
+  }
+
+  .customGreen {
+    color: #ccff00;
+  }

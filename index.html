@@ -25,7 +25,7 @@
       </style>
 
   <style>
-   
+
   </style>
 </head>
 
@@ -35,7 +35,7 @@
 
 
   <main>
-    <nav class="bg-neutral-500 bottom-4 w-96 fixed left-1/2  -translate-x-1/2 items-center rounded-lg ">
+    <nav id="navBottom" class="bg-neutral-500 bottom-4 w-96 fixed left-1/2  -translate-x-1/2 items-center rounded-lg ">
       <div class="max-2-screen-xs flex flex-wrap items-center justify-between mx-2 p-3">
         <div class="flex items-center space-x-4 rtl:space-x-reverse"> <img src="src/assets/svg-content/logo.svg"
             alt="diyoLogo" class="w-8">
@@ -52,7 +52,7 @@
 
     <section id="s1" class="section-hero">
 
-      <div class="bg-white mx-8 mt-5 rounded-lg border z-20">
+      <div id="nav" class="bg-white mx-8 mt-5 rounded-lg border z-20">
         <div class="max-w-screen-xs flex flex-wrap items-center justify-between mx-2 p-3">
           <p href="" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="src/assets/svg-content/logo.svg" class="h-8" alt="diyoLogo">
@@ -72,11 +72,11 @@
         </div>
       </div>
 
-      <div class="hero_wrapper relative z-[-10] flex justify-center items-center overflow-hidden">
-        <div class="hero_portrait-container flex justify-center items-center ">
+      <div id="hero-marquee" class="hero_wrapper relative z-[-10] flex justify-center items-center overflow-hidden">
+        <div id="hero-image" class="hero_portrait-container flex justify-center items-center ">
           <img src="src/assets/image/avatar2.png" alt="" class="hero-image w-2/3">
         </div>
-        <div class="marquee absolute flex z-[-20] animate-marquee whitespace-nowrap px-8">
+        <div id="marquee" class="marquee absolute flex z-[-20] animate-marquee whitespace-nowrap px-8">
           <!-- <img src="src/assets/svg-content/nameMarquee.svg" alt="" class=""> -->
           <svg width="2787" height="983" viewBox="0 0 32768 3346" fill="none" xmlns="http://www.w3.org/2000/svg"
             class="mb-20">
@@ -128,7 +128,7 @@
 
         </div>
 
-        <div class="marquee absolute flex z-[-20] animate-marquee2 whitespace-nowrap px-8">
+        <div id="marquee" class="marquee absolute flex z-[-20] animate-marquee2 whitespace-nowrap px-8">
           <!-- <img src="src/assets/svg-content/nameMarquee.svg" alt="" class=""> -->
           <svg width="2787" height="1183" viewBox="0 0 32768 3346" fill="none" xmlns="http://www.w3.org/2000/svg"
             class="mb-20">
@@ -199,13 +199,16 @@
             <div class="text-size-small text-weight-medium text-style-allcaps text-primary">SCROLL&nbsp;DOWN</div>
         </div> -->
       </div>
-      <div class="hero_copyright-wrapper absolute bottom-3.5 right-8 rounded-lg p-2">
-        <div class="text-size-small font-medium text-style-allcaps text-black p-2 bg-white rounded-lg">©2024</div>
+
+      <div id="copyright-container" class="hero_copyright-wrapper absolute bottom-3.5 right-8 rounded-lg p-2">
+        <div id="copyright" class="text-size-small font-medium text-style-allcaps text-black p-2 bg-white rounded-lg">
+          ©2024</div>
       </div>
 
-      <div class="hero_copyright-wrapper absolute bottom-4 left-8 rounded-lg p-2 bg-transparent ">
+      <div id="scroll-down-container"
+        class="hero_copyright-wrapper absolute bottom-4 left-8 rounded-lg p-2 bg-transparent ">
         <div class="text-size-small flex items-center justify-center space-x-2 text-style-allcaps text-black ">
-          <div
+          <div id="scroll-down-animation"
             class="flex-wrap items-center justify-center w-8 h-8 text-black border-black border rounded-lg overflow-hidden">
 
             <!-- <svg  width="18" height="22" viewBox="0 0 82 45" fill="none" xmlns="http://www.w3.org/2000/svg" class="animate-arrow mx-auto w-4 my-1 items-center flex justify-center ">
@@ -234,7 +237,7 @@
           </svg> -->
 
           </div>
-          <div class="text-size-small font-medium text-black">SCROLL&nbsp;DOWN</div>
+          <div id="scroll-down-text" class="text-size-small font-medium text-black">SCROLL&nbsp;DOWN</div>
         </div>
       </div>
       </div>
@@ -356,20 +359,24 @@
         </div>
     </div> -->
 
-      <div class="p-8 flex justify-between bg-zinc-950">
+      <div id="container-about" class="p-8 flex justify-between bg-zinc-950">
         <div class="py-8 ">
           <div class="abouts_wrapper">
             <div class="mt-8">
               <div class="grid grid-cols-3 grid-rows-3 about_wrapper gap-4 text-justify ">
                 <div id="" class="about_content-left col-span-1 row-span-3 ">
-                  <h2 class="about_animated-heading overflow-hidden translate-y-5 text-center"><span class="about-animation text-6xl font-bold">A</span><span
+                  <h2 class="about_animated-heading overflow-hidden translate-y-5 text-center"><span
+                      class="about-animation text-6xl font-bold">A</span><span
                       class="about-animation text-6xl font-bold">b</span><span
                       class="about-animation text-6xl font-bold">o</span><span
                       class="about-animation text-6xl font-bold">u</span><span
                       class="about-animation text-6xl font-bold">t</span>
                   </h2>
-                  <div class="gif-char flex items-center justify-center translate-y-20">
-                    <img src="src/assets/gif's/shigure-ui-dance-ezgif.com-crop.gif" alt="" class="w-1/2  ">
+                  <div class="about-animation-gif flex items-center justify-center">
+                    <div class="flex items-center justify-center translate-y-20">
+                      <img src="src/assets/gif's/giphy (2).gif" alt="" class="w-1/2 transform scale-x-[-1] ">
+
+                    </div>
 
                   </div>
                 </div>
@@ -377,40 +384,70 @@
                 <div id="" class="about_content-right translate-y-5 col-span-2 row-span-3 mr-12">
                   <div class="mb-4">
                     <p class="text-white font-semibold text-4xl mt-0">
-                      <span class="text-span-8">Matthis</span>
+                      <span class="text-span-8">Diyo</span>
                       <span class="about_him-span text-uppercase text-sm">(he/him)</span>
-                      is a nomad product and brand designer with a passion for art and technology. He uses Webflow and
-                      other low-code tools to create stunning, one-of-a-kind pieces that come to life on the internet.
-                      Currently residing in the lush jungle of Mexico, Matthis operates globally and is ready to take on
-                      any design challenge.
+                      Hello! I am a web developer who is passionate about learning and exploring the digital world. I
+                      love to challenge myself with new projects and strive to keep learning in order to improve my
+                      skills. Besides spending my time as a web developer, I am also a manager of a football club (in
+                      fifa 23).
                     </p>
                   </div>
                   <div class="mt-8">
                     <div class="about_job-container">
-                      <div class="text-base font-medium text-uppercase">
-                        BUILDING PRODUCTS AT THE CROSSPATHS OF AI ⎯ SAAS ⎯ web3.
+
+                      <div class="">
+                        <div class=" font-semibold mb-2 text-xl">
+                          <p>My hobbies</p>
+                        </div>
+
+                        <div class="flex items-center mb-6">
+                          <div>
+                            <img src="src/assets/svg-content/Ps blue (1).svg" alt="" class="">
+                          </div>
+                          <div>
+                            <img src="src/assets/svg-content/netflic red (1).svg" alt="" class="mx-2">
+                          </div>
+                          <div>
+                            <img src="src/assets/svg-content/Spotify green (1).svg" alt="" class="">
+                          </div>
+                          <div>
+                            <img src="src/assets/svg-content/pornuhb (1).svg" alt="" class="mx-2">
+                          </div>
+                        </div>
+
+
+
+                        <div>
+                          <!-- <p>BUILDING PRODUCTS AT THE CROSSPATHS OF AI ⎯ SAAS ⎯ web3.</p> -->
+                        </div>
+
                       </div>
-                      <div class="job-wrapper flex my-6">
+                      <div class="education my-4 text-xl font-semibold">
+
+                        <p>Education & Experinces</p>
+
+                      </div>
+                      <div class="job-wrapper flex">
+
                         <div class="about_current-job flex items-center">
                           <div class="about_client-image-wrapper">
-                            <img
-                              src="https://assets-global.website-files.com/637853f6f3d6aacb22fa97db/64f5e73c0c42dde1921c7df8_CR_logo_black.svg"
-                              loading="lazy" width="52" alt="" class="about_client-image">
+                            <img src="src/assets/svg-content/Polije.svg" loading="lazy" width="52" alt=""
+                              class="about_client-image">
                           </div>
                           <div class="about_client-info mx-4 text-sm">
-                            <p class="font-semibold">Product designer</p>
-                            <p class="text-gray-500">ClubRare</p>
+                            <p class="font-medium">POLITEKNIK NEGERI JEMBER</p>
+                            <p class="text-gray-500">Informatic Management</p>
                           </div>
                         </div>
                         <div class="about_current-job flex items-center ">
                           <div class="about_client-image-wrapper">
-                            <img
-                              src="https://assets-global.website-files.com/637853f6f3d6aacb22fa97db/64f5e79fb44965b0c314f49a_SVZ.svg"
-                              loading="lazy" width="52" alt="" class="about_client-image">
+                            <img src="src/assets/svg-content/Group 184 (1).svg" loading="lazy" width="52" alt=""
+                              class="about_client-image">
                           </div>
                           <div class="about_client-info mx-4 text-sm">
-                            <p class="font-semibold">Senior Lead Designer</p>
-                            <p class="text-gray-500">SVZ</p>
+                            <p class="font-medium">
+                              BEM - KM POLIJE</p>
+                            <p class="text-gray-500"> Expert staff of the Ministry of Foreign Affairs </p>
                           </div>
                         </div>
                       </div>
