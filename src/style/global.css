@@ -38,7 +38,7 @@ html.lenis {
   animation: scroll 10s linear infinite;
 }
 
-/* Menambahkan font custom */
+/* Customm css */
 @font-face {
   font-family: 'MolexShoora-Bold';
   src: url('src/assets/font/MolexShoora-Bold.otf') format('opentype');
@@ -46,6 +46,64 @@ html.lenis {
 
 .MolexShoora-Bold {
   font-family: 'MolexShoora-Bold';
+}
+
+.green-custome-1 {
+  color: var(--green-custome-1);
+}
+.green-custome-2 {
+  color: var(--green-custome-2);
+}
+.green-custome-3 {
+  color: var(--green-custome-3);
+}
+.green-custome-4 {
+  color: var(--green-custome-4);
+}
+.green-custome-5 {
+  color: var(--green-custome-5);
+}
+
+
+.blue-custome-1{
+  color: var(--blue-custome-1)
+}
+
+.blue-custome-2{
+  color: var(--blue-custome-2)
+}
+
+.blue-custome-3{
+  color: var(--blue-custome-3)
+}
+.blue-custome-4{
+  color: var(--blue-custome-4)
+}
+
+.green-custome-1{
+  color: var(--green-custome-1)
+}
+.green-custome-1{
+  color: var(--green-custome-2)
+}
+.green-custome-1{
+  color: var(--green-custome-1)
+}
+.green-custome-1{
+  color: var(--green-custome-1)
+}
+
+.red-custome-1{
+  color: var(--red-custome-1)
+}
+.red-custome-2{
+  color: var(--red-custome-2)
+}
+.red-custome-3{
+  color: var(--red-custome-3)
+}
+.red-custome-4{
+  color: var(--red-custome-4)
 }
 
 *,
@@ -61,7 +119,26 @@ body {
     --dark: #222222;
     --gap-primary: 16px;
     --gap-secondary: 8px;
+    --white-custome-1: #F1FAEE;
+    --blue-custome-1: #0070D1;
+    --blue-custome-2: #00FFFF;
+    --blue-custome-3: #87CEEB;
+    --blue-custome-4: #7DF9FF;   
+    --red-custome-1: #DB202C;
+    --red-custome-2: #FF4136;
+    --red-custome-3: #FF7F7F;
+    --red-custome-4: #FF0033;
+    --green-custome-1: #1ED760;
+    --green-custome-2: #ccff00;
+    --green-custome-3: #2ECC40;
+    --green-custome-4: #98FB98;
+    --green-custome-5: #00FF00;
 }
+
+.customWhite{
+  color: var(--white-custome-1);
+}
+
 
 
 
@@ -274,6 +351,143 @@ nav {
 }
   }
 
-  .customGreen {
-    color: #ccff00;
+
+  /* .animate-text{
+    position: absolute;
+    padding: 0 40px;
+    height: 60px;
+    background-color: cadetblue;
+    overflow: hidden;
   }
+
+  .line{
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+
+  .line:first-child{
+  animation: anim 12 infinite ;
+  -webkit-animation: anim 12 infinite ;
+  }
+
+  @keyframes anim {
+    0%{
+      margin-top: 0;
+    }
+    16%{
+      margin-top: -60px;
+    }
+    33%{
+      margin-top: -120px;
+    }
+    50%{
+      margin-top: -180px;
+    }
+    66%{
+      margin-top: -120px;
+    }
+    82%{
+      margin-top: -60px;
+    }
+    100%{
+      margin-top: 0;
+    }
+  } */
+
+  .home-text{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .home-text h1{
+   color:#ffffff;
+   line-height: 48px;
+  }
+  .home-text p{
+   margin:0;
+   overflow: hidden;
+ }
+  .home-text p span{
+     line-height: 48px;
+     display: none;
+ }
+ 
+  .home-text p span.text-in{
+   display: block;
+   animation: textIn .5s ease;
+ }
+  .home-text p span.text-out{
+   animation: textOut .5s ease;
+ }
+ @keyframes textIn{
+   0%{
+     transform: translateY(100%);
+     -webkit-transform: translateY(100%);
+     -moz-transform: translateY(100%);
+     -ms-transform: translateY(100%);
+     -o-transform: translateY(100%);
+}
+   100%{
+     transform: translateY(0%);
+   }
+ }
+ @keyframes textOut{
+   0%{
+     transform: translateY(0%);
+   }
+   100%{
+     transform: translateY(-100%);
+ 
+   }
+ }
+
+ /* Marquee 2 */
+
+ 
+
+
+ .marquee2 {
+  width: 100%;
+  grid-column-gap: 3rem;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0);
+  border: .0625rem solid #000;
+  border-radius: .6rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.marquee2_content {
+  min-width: 100%;
+  grid-column-gap: 1rem;
+  flex: none;
+  justify-content: space-around;
+  display: flex;
+}
+
+.marquee2_content.scroll {
+  grid-column-gap: 0rem;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee2_custom-text {
+  max-width: 100%;
+  letter-spacing: -.1875rem;
+  text-transform: uppercase;
+  flex: 0 auto;
+  margin-right: 2rem;
+  padding-right: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 7rem;
+  font-weight: 500;
+  line-height: 1;
+}
