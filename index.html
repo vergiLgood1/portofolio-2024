@@ -29,13 +29,14 @@
   </style>
 </head>
 
-<body>
+<body class="">
 
   <!-- 👇 your content here 👇 -->
 
 
   <main>
-    <nav id="navBottom" class="bg-neutral-500 bottom-4 w-96 fixed left-1/2  -translate-x-1/2 items-center rounded-lg ">
+    
+    <nav id="navBottom" class="bg-neutral-500 bottom-4 w-96 fixed left-1/2  -translate-x-1/2 items-center rounded-lg sticky top-5 z-1">
       <div class="max-2-screen-xs flex flex-wrap items-center justify-between mx-2 p-3">
         <div class="flex items-center space-x-4 rtl:space-x-reverse"> <img src="src/assets/svg-content/logo.svg"
             alt="diyoLogo" class="w-8">
@@ -49,10 +50,8 @@
         </div>
       </div>
     </nav>
-
-    <section id="s1" class="section-hero">
-
-      <div id="nav" class="bg-white mx-8 mt-5 rounded-lg border z-20">
+    <section id="s1" class="section-hero sticky top-0 z-[-1] py-5">
+      <div id="nav" class="bg-white mx-8 rounded-lg border ">
         <div class="max-w-screen-xs flex flex-wrap items-center justify-between mx-2 p-3">
           <p href="" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="src/assets/svg-content/logo.svg" class="h-8" alt="diyoLogo">
@@ -200,13 +199,13 @@
         </div> -->
       </div>
 
-      <div id="copyright-container" class="hero_copyright-wrapper absolute bottom-3.5 right-8 rounded-lg p-2">
+      <div id="copyright-container" class="hero_copyright-wrapper absolute bottom-3.5 right-8 rounded-lg p-2 mb-5">
         <div id="copyright" class="text-size-small font-medium text-style-allcaps text-black p-2 bg-white rounded-lg">
           ©2024</div>
       </div>
 
       <div id="scroll-down-container"
-        class="hero_copyright-wrapper absolute bottom-4 left-8 rounded-lg p-2 bg-transparent ">
+        class="hero_copyright-wrapper absolute bottom-4 left-8 rounded-lg p-2 bg-transparent mb-5 ">
         <div class="text-size-small flex items-center justify-center space-x-2 text-style-allcaps text-black ">
           <div id="scroll-down-animation"
             class="flex-wrap items-center justify-center w-8 h-8 text-black border-black border rounded-lg overflow-hidden">
@@ -300,66 +299,8 @@
       </div>
     </section> -->
 
-    <section id="s2">
-      <!-- <div class="padding-global flex justify-between p-12 bg-zinc-950">
-        <div class="padding-vertical py-12 bg-gray-500">
-            <div class="abouts-wrapper bg-blue-500">
-                <div class="margin-top my-4 bg-blue-500">
-                    <div class="grid grid-cols-1 gap-4"> 
-                        <div id="" class="about-content-left overflow-hidden">
-                            <h2 class=""><span class="about-animation text-6xl font-bold">A</span><span class="about-animation text-6xl font-bold">b</span><span class="about-animation text-6xl font-bold">o</span><span class="about-animation text-6xl font-bold">u</span><span class="about-animation text-6xl font-bold">t</span>
-                            </h2>
-                        </div>
-                        <div id="" class="about-content-right">
-                            <div class="margin-bottom my-4">
-                                <p class="text-2xl font-bold">
-                                    <span class="w-8/12">Matthis</span>
-                                    <span class="about_him-span">(he/him)</span> is a nomad
-                                    product and brand designer with a passion for art and technology. He
-                                    uses Webflow and other low-code tools to create stunning, one-of-a-kind
-                                    pieces that come to life on the internet. Currently residing in the lush
-                                    jungle of Mexico, Matthis operates globally and is ready to take on any
-                                    design challenge.
-                                </p>
-                            </div>
-                            <div class="margin-top my-8 bg-red-500">
-                                <div class="about-job-container">
-                                    <div class="text-sm font-medium uppercase">
-                                        BUILDING&nbsp;PRODUCTS&nbsp;AT&nbsp;THE&nbsp;CROSSpATHS&nbsp;OF&nbsp;AI
-                                        ⎯ SAAS ⎯ web3.
-                                    </div>
-                                    <div class="job-wrapper">
-                                        <div class="about-current-job flex">
-                                            <div class="about-client-image-wrapper">
-                                                <img src="https://assets-global.website-files.com/637853f6f3d6aacb22fa97db/64f5e73c0c42dde1921c7df8_CR_logo_black.svg"
-                                                    loading="lazy" width="52" alt="" class="about-client-image">
-                                            </div>
-                                            <div class="about-client-info">
-                                                <p class="font-semibold">Product designer</p>
-                                                <p class="text-gray-500">ClubRare</p>
-                                            </div>
-                                        </div>
-                                        <div class="about_current-job flex">
-                                            <div class="about-client-image-wrapper">
-                                                <img src="https://assets-global.website-files.com/637853f6f3d6aacb22fa97db/64f5e79fb44965b0c314f49a_SVZ.svg"
-                                                    loading="lazy" width="52" alt="" class="about-client-image">
-                                            </div>
-                                            <div class="about-client-info">
-                                                <p class="font-semibold">Senior Lead Designer</p>
-                                                <p class="text-gray-500">SVZ</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-      <div id="container-about" class="p-8 flex justify-between bg-zinc-950">
+    <section id="s2" class="z-2`">
+      <div id="about-content-left" class="p-8 flex justify-between bg-zinc-950">
         <div class="py-8 ">
           <div class="abouts_wrapper">
             <div class="mt-8">
@@ -381,13 +322,13 @@
                   </div>
                 </div>
 
-                <div id="" class="about_content-right translate-y-5 col-span-2 row-span-3 mr-12">
-                  <div class="mb-4">
-                    <div class="container-scroll">
-                      <div class="home-text text-4xl font-bold mb-4 ">
+                <div id="about-content-right" class="about_content-right translate-y-5 col-span-2 row-span-3 mr-12 ">
+                  <div class="">
+                    <div class="container-scroll ">
+                      <div class="home-text text-4xl font-bold mb-2 bg">
                         <h1>Hello. I am a</h1>
                         <div class="mx-2">
-                          <p class="animate-text text-4xl font-bold green-custome-2">
+                          <p class="slideUp-text text-4xl font-bold green-custome-2">
                             <span class="">Web Developer</span>
                             <span class="">Ui/Ux Designer</span>
                             <span class="">Gamers</span>
@@ -480,12 +421,12 @@
         <div class="rowSkill">
           <div class="marquee2 flex overflow-hidden">
             <div class="marquee2_content flex items-center space-x-2">
-                <div class="marquee2_custom-text transform-gpu scale-100 rotate-x-0 rotate-y-0 rotate-z-0 transition-transform duration-300 ease-in-out origin-top h-0">
+                <div class="marquee2_custom-text ">
                     SUPER&nbsp;BADASS 🔥 SUPER&nbsp;BADASS 🔥
                 </div>
             </div>
             <div class="marquee2_content flex items-center space-x-2">
-                <div class="marquee2_custom-text transform-gpu scale-100 rotate-x-0 rotate-y-0 rotate-z-0 transition-transform duration-300 ease-in-out origin-top h-0">
+                <div class="marquee2_custom-text ">
                     SUPER&nbsp;BADASS 🔥 SUPER&nbsp;BADASS 🔥
                 </div>
             </div>
