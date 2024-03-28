@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navBottom = document.getElementById("navBottom");
   const scrollText = document.getElementById("scrollText");
 
-  navBottom.style.display = "block";
+  navBottom.style.display = "none";
 
   // Linktree button click
   document
