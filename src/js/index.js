@@ -95,10 +95,10 @@ document.addEventListener("DOMContentLoaded", function () {
   //   console.log("Tinggi scroll halaman:", scrollHeight);
   // });
 
-  window.addEventListener("scroll", function (event) {
-    let scroll = window.scrollY;
-    console.log(scroll);
-  });
+  // window.addEventListener("scroll", function (event) {
+  //   let scroll = window.scrollY;
+  //   console.log(scroll);
+  // });
 
   // Change heigth on scroll event
   // var content = document.getElementById("content");
@@ -120,5 +120,137 @@ document.addEventListener("DOMContentLoaded", function () {
   //   content.style.height = newHeight + "px";
 
   //   initialScroll = currentScroll; // Update posisi scroll awal
+  // });
+
+  // handle hover collection list item
+
+  const collectionItem1 = document.getElementById("collection-item1");
+  const collectionItem2 = document.getElementById("collection-item2");
+  const collectionItem3 = document.getElementById("collection-item3");
+  const collectionItem4 = document.getElementById("collection-item4");
+  const collectionItem5 = document.getElementById("collection-item5");
+  const collectionItem6 = document.getElementById("collection-item6");
+  const collectionItem7 = document.getElementById("collection-item7");
+  const iconSvg1 = document.getElementById("icon-svg1");
+  const iconSvg2 = document.getElementById("icon-svg2");
+  const iconSvg3 = document.getElementById("icon-svg3");
+  const iconSvg4 = document.getElementById("icon-svg4");
+  const iconSvg5 = document.getElementById("icon-svg5");
+  const iconSvg6 = document.getElementById("icon-svg6");
+  const iconSvg7 = document.getElementById("icon-svg7");
+  const borderContact1 = document.getElementById("border-contact1");
+  const borderContact2 = document.getElementById("border-contact2");
+  const borderContact3 = document.getElementById("border-contact3");
+  const borderContact4 = document.getElementById("border-contact4");
+  const borderContact5 = document.getElementById("border-contact5");
+  const borderContact6 = document.getElementById("border-contact6");
+  const borderContact7 = document.getElementById("border-contact7");
+  const textContact1 = document.getElementById("text-contact1");
+  const textContact2 = document.getElementById("text-contact2");
+  const textContact3 = document.getElementById("text-contact3");
+  const textContact4 = document.getElementById("text-contact4");
+  const textContact5 = document.getElementById("text-contact5");
+  const textContact6 = document.getElementById("text-contact6");
+  const textContact7 = document.getElementById("text-contact7");
+  // const vsCodeSrc = document.getElementById("vsCodeSrc");
+  // const figmaSrc = document.getElementById("figmaSrc");
+  // const aiSrc = document.getElementById("aiSrc");
+  
+  collectionItem1.addEventListener("mouseenter", () => {
+    iconSvg1.style.borderColor = "#ffff";
+    vsCodeSrc.src = "/src/assets/svg-content/vsCode2.svg";
+    borderContact1.style.borderColor = "#ffffff";
+    borderContact1.style.backgroundColor = "#ffffff";
+    textContact1.style.color = "#000000";
+  });
+
+  collectionItem1.addEventListener("mouseleave", () => {
+    iconSvg1.style.borderColor = "#000";
+    vsCodeSrc.src = "/src/assets/svg-content/vsCode.svg";
+    borderContact1.style.borderColor = "#000";
+    borderContact1.style.backgroundColor = "none";
+    textContact1.style.color = "#000";
+  });
+
+  collectionItem2.addEventListener("mouseenter", () => {
+    iconSvg2.style.borderColor = "#ffff";
+    borderContact2.style.borderColor = "#ffffff";
+    borderContact2.style.backgroundColor = "#ffffff";
+    textContact2.style.color = "#000000";
+  });
+
+  collectionItem2.addEventListener("mouseleave", () => {
+    iconSvg2.style.borderColor = "#000";
+    borderContact2.style.borderColor = "#000";
+    borderContact2.style.backgroundColor = "none";
+    textContact2.style.color = "#000";
+  });
+
+  collectionItem3.addEventListener("mouseenter", () => {
+    iconSvg3.style.borderColor = "#ffff";
+    borderContact3.style.borderColor = "#ffffff";
+    borderContact3.style.backgroundColor = "#ffffff";
+    textContact3.style.color = "#000000";
+  });
+
+  collectionItem3.addEventListener("mouseleave", () => {
+    iconSvg3.style.borderColor = "#000";
+    borderContact3.style.borderColor = "#000";
+    borderContact3.style.backgroundColor = "none";
+    textContact3.style.color = "#000";
+  });
+
+  collectionItem4.addEventListener("mouseenter", () => {
+    iconSvg4.style.borderColor = "#ffff";
+    borderContact4.style.borderColor = "#ffffff";
+    borderContact4.style.backgroundColor = "#ffffff";
+    textContact4.style.color = "#000";
+  });
+
+  collectionItem4.addEventListener("mouseleave", () => {
+    iconSvg4.style.borderColor = "#000";
+    borderContact4.style.borderColor = "#000";
+    borderContact4.style.backgroundColor = "none";
+    textContact4.style.color = "#000";
+  });
+
+  // const collectionList = document.getElementById("collection-list");
+
+  // collectionList.addEventListener("mouseenter", function(event) {
+  //   const target = event.target;
+  //   const isCollectionList = target.classList.contains("collection-item");
+
+  //   if (isCollectionList) {
+  //     const itemId = target.id;
+  //     const iconSvg = document.getElementById(`icon-svg${itemId.slice(-1)}`);
+  //     const borderContact = document.getElementById(`border-contact${itemId.slice(-1)}`);
+  //     const textContact = document.getElementById(`text-contact${itemId.slice(-1)}`);
+
+  //     if (iconSvg && borderContact && textContact) {
+  //       iconSvg.style.borderColor = "#ffff";
+  //       borderContact.style.borderColor = "#ffffff";
+  //       borderContact.style.backgroundColor = "#ffffff";
+  //       textContact.style.color = "#000000";
+  //     }
+  //   }
+  // });
+
+  // collectionList.addEventListener("mouseleave", function(event) {
+  //   const target = event.target;
+  //   const isCollectionList = target.classList.contains("collection-item");
+
+  //   if (isCollectionList) {
+  //     const itemId = target.id;
+  //     const iconSvg = document.getElementById(`icon-svg${itemId.slice(-1)}`);
+  //     const borderContact = document.getElementById(`border-contact${itemId.slice(-1)}`);
+  //     const textContact = document.getElementById(`text-contact${itemId.slice(-1)}`);
+
+  //     if (iconSvg && borderContact && textContact) {
+  //       iconSvg.style.borderColor = "#000";
+  //       borderContact.style.borderColor = "#000";
+  //       borderContact.style.backgroundColor = "none";
+  //       textContact.style.color = "#000";
+  //     }
+  //   }
   // });
 });
