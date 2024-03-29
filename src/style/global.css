@@ -113,7 +113,27 @@ html.lenis {
 }
 
 .red-custome-4 {
-  color: var(--red-custome-4);
+  background-color: var(--red-custome-4);
+}
+
+.midnight-sea {
+  background-color: var(--midnight-sea);
+}
+
+.coal {
+  background-color: var(--coal);
+}
+
+.night-forest {
+  background-color: var(--night-forest);
+}
+
+.burn-mocca {
+  background-color: var(--burn-mocca);
+}
+
+.night {
+  background-color: var(--night);
 }
 
 *,
@@ -143,6 +163,11 @@ body {
   --green-custome-3: #2ecc40;
   --green-custome-4: #98fb98;
   --green-custome-5: #00ff00;
+  --midnight-sea: #051118;
+  --burn-mocca: #130e09;
+  --night-forest: #111b12;
+  --night: #111111;
+  --coal: #282828;
 }
 
 .customWhite {
@@ -525,7 +550,7 @@ nav {
     sans-serif;
 }
 
-.skill-header.border-bottom {
+/* .skill-header.border-bottom {
   width: 100%;
   height: auto;
   grid-column-gap: 6rem;
@@ -538,7 +563,7 @@ nav {
   top: 0;
   bottom: 0;
   overflow: hidden;
-}
+} */
 
 .scroll {
   overflow: visible;
@@ -584,7 +609,7 @@ nav {
 
 /* Skill Infornmation */
 
-.skill-header-information {
+/* .skill-header-information {
   width: 100%;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
@@ -600,7 +625,7 @@ nav {
   grid-row-gap: 2rem;
   flex-direction: column;
   display: flex;
-}
+} */
 
 /* Project table */
 
