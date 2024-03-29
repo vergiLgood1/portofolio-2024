@@ -80,103 +80,71 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // {Awal fungsi untuk menangani mouse hover pada collection item} -------------------------------->
 
-
-// {Awal fungsi untuk menangani mouse hover pada collection item} -------------------------------->
-
-// Menyiapkan objek yang menyimpan referensi ke elemen-elemen yang dibutuhkan
-const elements = {
-  collectionItems: document.querySelectorAll("[id^='collection-item']"),
-  iconSvgs: document.querySelectorAll("[id^='icon-svg']"),
-  borderContacts: document.querySelectorAll("[id^='border-contact']"),
-  textContacts: document.querySelectorAll("[id^='text-contact']"),
-  iconSrcs: document.querySelectorAll("[id^='icon-src']"),
-  // tambahkan referensi elemen lainnya di sini jika diperlukan
-};
-
-// Fungsi untuk menangani event mouseenter dan mouseleave
-function mouseEnter(event) {
-  const index = event.target.id.slice(-1); // Mendapatkan indeks dari ID elemen
-
-  // Memperbarui gaya sesuai dengan indeks
-  elements.iconSvgs[index - 1].style.borderColor = "#ffff";
-  elements.borderContacts[index - 1].style.borderColor = "#ffffff";
-  elements.borderContacts[index - 1].style.backgroundColor = "#ffffff";
-  elements.textContacts[index - 1].style.color = "#051118";
-
-  // Mengubah src iconSvg berdasarkan ID elemen
-  switch (event.target.id) {
-    case 'collection-item1':
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/vsCode2.svg";
-      break;
-    case 'collection-item2':
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/vsCode2.svg";
-      break;
-    case 'collection-item3': 
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/vsCode2.svg";
-      break;
-    case 'collection-item4': 
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/vsCode2.svg";
-      break;
-    case 'collection-item5': 
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/vsCode2.svg";
-      break;
-    case 'collection-item6': 
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/figma2.svg";
-      break;
-    case 'collection-item7': 
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/Ai2.svg";
-      break;
-    default:
-      // Jika ID tidak sesuai dengan case yang didefinisikan, tidak melakukan perubahan src
-      break;
-  }
-}
-
-function mouseleave(event) {
-  const index = event.target.id.slice(-1); // Mendapatkan indeks dari ID elemen
-
-  // Memperbarui gaya sesuai dengan indeks
-  elements.iconSvgs[index - 1].style.borderColor = "#051118";
-  elements.borderContacts[index - 1].style.borderColor = "#051118";
-  elements.borderContacts[index - 1].style.backgroundColor = "transparent";
-  elements.textContacts[index - 1].style.color = "#051118";
-
-  // Mengubah src iconSvg berdasarkan ID elemen
-  switch (event.target.id) {
-    case 'collection-item1':
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/vsCode.svg";
-      break;
-    case 'collection-item2':
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/vsCode.svg";
-      break;
-    case 'collection-item3': 
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/vsCode.svg";
-      break;
-    case 'collection-item4': 
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/vsCode.svg";
-      break;
-    case 'collection-item5': 
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/vsCode.svg";
-      break;
-    case 'collection-item6': 
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/figma.svg";
-      break;
-    case 'collection-item7': 
-      elements.iconSrcs[index - 1].src = "/src/assets/svg-content/Ai.svg";
-      break;
-    default:
-      // Jika ID tidak sesuai dengan case yang didefinisikan, tidak melakukan perubahan src
-      break;
-  }
-}
-
-// Menambahkan event listener untuk setiap elemen koleksi
-elements.collectionItems.forEach((item) => {
-  item.addEventListener("mouseenter", mouseEnter);
-  item.addEventListener("mouseleave", mouseleave);
-});
-
-// <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada collection item} 
+  // Menyiapkan objek yang menyimpan referensi ke elemen-elemen yang dibutuhkan
+  const elements = {
+    collectionItems: document.querySelectorAll("[id^='collection-item']"),
+    iconSvgs: document.querySelectorAll("[id^='icon-svg']"),
+    borderContacts: document.querySelectorAll("[id^='border-contact']"),
+    textContacts: document.querySelectorAll("[id^='text-contact']"),
+    iconSrcs: document.querySelectorAll("[id^='icon-src']"),
+    // tambahkan referensi elemen lainnya di sini jika diperlukan
+  };
+  function mouseEnter(event) {
+    const index = event.target.id.slice(-1); // Mendapatkan indeks dari ID elemen
   
+    // Memperbarui gaya sesuai dengan indeks
+    elements.iconSvgs[index - 1].style.borderColor = "#ffff";
+    elements.borderContacts[index - 1].style.borderColor = "#ffffff";
+    elements.borderContacts[index - 1].style.backgroundColor = "#ffffff";
+    elements.textContacts[index - 1].style.color = "#051118";
+  
+    // Mengubah src iconSvg berdasarkan ID elemen
+    const iconSrcMap = {
+      "collection-item1": "/src/assets/svg-content/vsCode2.svg",
+      "collection-item2": "/src/assets/svg-content/vsCode2.svg",
+      "collection-item3": "/src/assets/svg-content/vsCode2.svg",
+      "collection-item4": "/src/assets/svg-content/vsCode2.svg",
+      "collection-item5": "/src/assets/svg-content/vsCode2.svg",
+      "collection-item6": "/src/assets/svg-content/figma2.svg",
+      "collection-item7": "/src/assets/svg-content/Ai2.svg",
+    };
+  
+    elements.iconSrcs[index - 1].src = iconSrcMap[event.target.id] || elements.iconSrcs[index - 1].src;
+    elements.borderContacts[index - 1].classList.add("icon-src"); // Tambahkan kelas CSS untuk animasi
+  }
+  
+  function mouseLeave(event) {
+    const index = event.target.id.slice(-1); // Mendapatkan indeks dari ID elemen
+  
+    // Mengembalikan style elemen ke aslinya
+    elements.iconSvgs[index - 1].style.borderColor = "#051118";
+    elements.borderContacts[index - 1].style.borderColor = "#051118";
+    elements.borderContacts[index - 1].style.backgroundColor = "transparent";
+    elements.textContacts[index - 1].style.color = "#051118";
+  
+    // Objek untuk memetakan ID dengan src iconSvg yang sesuai
+    const iconSrcMap = {
+      "collection-item1": "/src/assets/svg-content/vsCode.svg",
+      "collection-item2": "/src/assets/svg-content/vsCode.svg",
+      "collection-item3": "/src/assets/svg-content/vsCode.svg",
+      "collection-item4": "/src/assets/svg-content/vsCode.svg",
+      "collection-item5": "/src/assets/svg-content/vsCode.svg",
+      "collection-item6": "/src/assets/svg-content/figma.svg",
+      "collection-item7": "/src/assets/svg-content/Ai.svg",
+    };
+  
+    elements.iconSrcs[index - 1].src = iconSrcMap[event.target.id] || elements.iconSrcs[index - 1].src;
+    elements.borderContacts[index - 1].classList.add("icon-src"); // Tambahkan kelas CSS untuk animasi
+  }
+  
+  // Menambahkan event listener untuk setiap elemen koleksi
+  elements.collectionItems.forEach((item) => {
+    item.addEventListener("mouseenter", mouseEnter);
+    item.addEventListener("mouseleave", mouseLeave);
+  });
+  
+
+  // <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada collection item}
 });

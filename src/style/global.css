@@ -644,8 +644,18 @@ nav {
   position: static;
 }
 
-.collection-item {
-}
+/* .collection-item:hover {
+  transition: ease-in-out 350ms;
+  -webkit-transition: ease-in-out 350ms;
+  -moz-transition: ease-in-out 350ms;
+  -ms-transition: ease-in-out 350ms;
+  -o-transition: ease-in-out 350ms;
+} */
 
-.collection-item:hover {
+.icon-src {
+  transition: src 1.3s ease-in-out;
+  -webkit-transition: src 1.3s ease-in-out;
+  -moz-transition: src 1.3s ease-in-out;
+  -ms-transition: src 1.3s ease-in-out;
+  -o-transition: src 1.3s ease-in-out;
 }
