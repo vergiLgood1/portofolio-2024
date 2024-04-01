@@ -179,9 +179,20 @@ main {
 
 body {
   color: var(--light);
-  font-family: monospace system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans,
-    Droid Sans, sans-serif;
+  font-family:
+    monospace system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Noto Sans,
+    Ubuntu,
+    Cantarell,
+    Helvetica Neue,
+    Oxygen,
+    Fira Sans,
+    Droid Sans,
+    sans-serif;
   background-color: #ebebeb;
 
   /* Diperlukan agar halaman dapat digulir */
@@ -545,8 +556,19 @@ nav {
 }
 
 .marquee2-custom-text {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans,
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Noto Sans,
+    Ubuntu,
+    Cantarell,
+    Helvetica Neue,
+    Oxygen,
+    Fira Sans,
+    Droid Sans,
     sans-serif;
 }
 

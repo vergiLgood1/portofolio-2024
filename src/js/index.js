@@ -93,13 +93,13 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   function mouseEnter(event) {
     const index = event.target.id.slice(-1); // Mendapatkan indeks dari ID elemen
-  
+
     // Memperbarui gaya sesuai dengan indeks
     elements.iconSvgs[index - 1].style.borderColor = "#ffff";
     elements.borderContacts[index - 1].style.borderColor = "#ffffff";
     elements.borderContacts[index - 1].style.backgroundColor = "#ffffff";
     elements.textContacts[index - 1].style.color = "#051118";
-  
+
     // Mengubah src iconSvg berdasarkan ID elemen
     const iconSrcMap = {
       "collection-item1": "/src/assets/svg-content/vsCode2.svg",
@@ -110,20 +110,21 @@ document.addEventListener("DOMContentLoaded", function () {
       "collection-item6": "/src/assets/svg-content/figma2.svg",
       "collection-item7": "/src/assets/svg-content/Ai2.svg",
     };
-  
-    elements.iconSrcs[index - 1].src = iconSrcMap[event.target.id] || elements.iconSrcs[index - 1].src;
+
+    elements.iconSrcs[index - 1].src =
+      iconSrcMap[event.target.id] || elements.iconSrcs[index - 1].src;
     elements.borderContacts[index - 1].classList.add("icon-src"); // Tambahkan kelas CSS untuk animasi
   }
-  
+
   function mouseLeave(event) {
     const index = event.target.id.slice(-1); // Mendapatkan indeks dari ID elemen
-  
+
     // Mengembalikan style elemen ke aslinya
     elements.iconSvgs[index - 1].style.borderColor = "#051118";
     elements.borderContacts[index - 1].style.borderColor = "#051118";
     elements.borderContacts[index - 1].style.backgroundColor = "transparent";
     elements.textContacts[index - 1].style.color = "#051118";
-  
+
     // Objek untuk memetakan ID dengan src iconSvg yang sesuai
     const iconSrcMap = {
       "collection-item1": "/src/assets/svg-content/vsCode.svg",
@@ -134,17 +135,17 @@ document.addEventListener("DOMContentLoaded", function () {
       "collection-item6": "/src/assets/svg-content/figma.svg",
       "collection-item7": "/src/assets/svg-content/Ai.svg",
     };
-  
-    elements.iconSrcs[index - 1].src = iconSrcMap[event.target.id] || elements.iconSrcs[index - 1].src;
+
+    elements.iconSrcs[index - 1].src =
+      iconSrcMap[event.target.id] || elements.iconSrcs[index - 1].src;
     elements.borderContacts[index - 1].classList.add("icon-src"); // Tambahkan kelas CSS untuk animasi
   }
-  
+
   // Menambahkan event listener untuk setiap elemen koleksi
   elements.collectionItems.forEach((item) => {
     item.addEventListener("mouseenter", mouseEnter);
     item.addEventListener("mouseleave", mouseLeave);
   });
-  
 
   // <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada collection item}
 });
