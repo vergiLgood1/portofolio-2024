@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navBottom = document.getElementById("navBottom");
   const scrollText = document.getElementById("scrollText");
 
-  navBottom.style.display = "none";
+  
 
   // Linktree button click
   document
@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     borderContacts: document.querySelectorAll("[id^='border-contact']"),
     textContacts: document.querySelectorAll("[id^='text-contact']"),
     iconSrcs: document.querySelectorAll("[id^='icon-src']"),
+    imgModal: document.querySelectorAll("[id^='img-modal']"),
     // tambahkan referensi elemen lainnya di sini jika diperlukan
   };
   function mouseEnter(event) {
@@ -99,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.borderContacts[index - 1].style.borderColor = "#ffffff";
     elements.borderContacts[index - 1].style.backgroundColor = "#ffffff";
     elements.textContacts[index - 1].style.color = "#051118";
+    elements.imgModal[index - 1].style.display = "block";
 
     // Mengubah src iconSvg berdasarkan ID elemen
     const iconSrcMap = {
@@ -124,6 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.borderContacts[index - 1].style.borderColor = "#051118";
     elements.borderContacts[index - 1].style.backgroundColor = "transparent";
     elements.textContacts[index - 1].style.color = "#051118";
+    elements.imgModal[index - 1].style.display = "none";
 
     // Objek untuk memetakan ID dengan src iconSvg yang sesuai
     const iconSrcMap = {
@@ -148,4 +151,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada collection item}
+
+  // {Awal fungsi untuk menangani mouse hover pada modal item} -------------------------------->
+
+  // <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada modal item}
 });
