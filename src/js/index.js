@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const navBottom = document.getElementById("navBottom");
   const scrollText = document.getElementById("scrollText");
 
-  
-
   // Linktree button click
   document
     .getElementById("btn-linktree")
