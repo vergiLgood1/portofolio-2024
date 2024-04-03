@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // {Awal fungsi untuk menangani mouse hover pada collection item} -------------------------------->
 
   // Menyiapkan objek yang menyimpan referensi ke elemen-elemen yang dibutuhkan
+  
   const elements = {
     collectionItems: document.querySelectorAll("[id^='collection-item']"),
     iconSvgs: document.querySelectorAll("[id^='icon-svg']"),
@@ -90,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
     imgModal: document.querySelectorAll("[id^='img-modal']"),
     // tambahkan referensi elemen lainnya di sini jika diperlukan
   };
-  function mouseEnter(event) {
+  const mouseEnter = (event) => {
     const index = event.target.id.slice(-1); // Mendapatkan indeks dari ID elemen
 
     // Memperbarui gaya sesuai dengan indeks
@@ -116,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.borderContacts[index - 1].classList.add("icon-src"); // Tambahkan kelas CSS untuk animasi
   }
 
-  function mouseLeave(event) {
+  const mouseLeave = (event) => {
     const index = event.target.id.slice(-1); // Mendapatkan indeks dari ID elemen
 
     // Mengembalikan style elemen ke aslinya
@@ -150,7 +151,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada collection item}
 
-  // {Awal fungsi untuk menangani mouse hover pada modal item} -------------------------------->
+  // {Awal fungsi untuk menangani mouse hover pada skill-card item} -------------------------------->
 
-  // <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada modal item}
+  const skillSubWrapper = {
+    skillCard: document.querySelectorAll(".skill-card"),
+  };
+
+  const mouseEnter2 = (event) => {
+    const projectTags = event.currentTarget.querySelectorAll(".project-tag");
+    projectTags.forEach((tag) => {
+      tag.style.backgroundColor = "#000";
+      tag.style.color = "#fff";
+      tag.style.borderColor = "#000";
+    });
+  };
+
+  const mouseLeave2 = (event) => {
+    const projectTags = event.currentTarget.querySelectorAll(".project-tag");
+    projectTags.forEach((tag) => {
+      tag.style.backgroundColor = "#fff";
+      tag.style.color = "#000";
+      tag.style.borderColor = "#fff";
+    });
+  };
+
+  skillSubWrapper.skillCard.forEach((item) => {
+    item.addEventListener("mouseenter", mouseEnter2 );
+    item.addEventListener("mouseleave", mouseLeave2 );
+  });
+
+  // <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada skill-card item}
 });
