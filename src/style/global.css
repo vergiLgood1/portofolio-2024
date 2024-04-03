@@ -702,6 +702,18 @@ nav {
   grid-template-columns: 1fr 1fr;
 }
 
-.skill-card {
-  background-image: url("https://cdn.pixabay.com/photo/2023/06/05/17/19/shopping-8042865_1280.png");
+.skill-card.card1 {
+  background-image: url(/src/assets/image/siapKuliahMockups.png);
+}
+.skill-card.card2 {
+  background-image: url(/src/assets/image/wizzMockups.png);
+}
+.skill-card.card3 {
+}
+
+.skill-card.card4 {
+  background-image: url(/src/assets/image/foodishMockup.png);
+}
+.skill-card.card5 {
+  background-image: url(/src/assets/image/angkringanMockups.png);
 }
