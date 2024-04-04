@@ -717,3 +717,13 @@ nav {
 .skill-card.card5 {
   background-image: url(/src/assets/image/angkringanMockups.png);
 }
+
+.main-cta-row {
+  background-color: var(--midnight-sea);
+  background-image: linear-gradient(
+      263deg,
+      rgba(24, 24, 24, 0.72),
+      rgba(0, 0, 0, 0) 85%
+    ),
+    url("/src/assets/svg-content/gridWhite.svg");
+}
