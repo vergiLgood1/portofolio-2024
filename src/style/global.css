@@ -150,19 +150,19 @@ body {
   --gap-primary: 16px;
   --gap-secondary: 8px;
   --white-custome-1: #f1faee;
-  --blue-custome-1: #0070d1;
+  --blue-custome-1: rgb(0, 112, 209);
   --blue-custome-2: #00ffff;
   --blue-custome-3: #87ceeb;
-  --blue-custome-4: #7df9ff;
+  --blue-custome-4: rgb(125, 249, 255);
   --red-custome-1: #db202c;
   --red-custome-2: #ff4136;
   --red-custome-3: #ff7f7f;
   --red-custome-4: #ff0033;
   --green-custome-1: #1ed760;
-  --green-custome-2: #ccff00;
+  --green-custome-2: rgb(204, 255, 0);
   --green-custome-3: #2ecc40;
   --green-custome-4: #98fb98;
-  --green-custome-5: #00ff00;
+  --green-custome-5: rgb(0, 255, 0);
   --midnight-sea: #051118;
   --burn-mocca: #130e09;
   --night-forest: #111b12;
@@ -726,4 +726,27 @@ nav {
       rgba(0, 0, 0, 0) 85%
     ),
     url("/src/assets/svg-content/gridWhite.svg");
+}
+
+/* .card-content-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+} */
+
+/* .card-content-overlay.first-content {
+  display: none;
+  background-color: blue;
+} */
+
+.img-card {
+  will-change: width;
+  min-width: 20%;
+  position: absolute;
 }

@@ -1,6 +1,18 @@
 {
-  "devDependencies": {
+  "name": "newportofolio",
+  "version": "1.0.0",
+  "description": "new porto for me",
+  "main": "tailwind.config.js",
+  "dependencies": {
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.13"
-  }
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

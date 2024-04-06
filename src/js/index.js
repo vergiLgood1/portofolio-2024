@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // {Awal fungsi untuk menangani mouse hover pada collection item} -------------------------------->
 
   // Menyiapkan objek yang menyimpan referensi ke elemen-elemen yang dibutuhkan
-  
+
   const elements = {
     collectionItems: document.querySelectorAll("[id^='collection-item']"),
     iconSvgs: document.querySelectorAll("[id^='icon-svg']"),
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.iconSrcs[index - 1].src =
       iconSrcMap[event.target.id] || elements.iconSrcs[index - 1].src;
     elements.borderContacts[index - 1].classList.add("icon-src"); // Tambahkan kelas CSS untuk animasi
-  }
+  };
 
   const mouseLeave = (event) => {
     const index = event.target.id.slice(-1); // Mendapatkan indeks dari ID elemen
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.iconSrcs[index - 1].src =
       iconSrcMap[event.target.id] || elements.iconSrcs[index - 1].src;
     elements.borderContacts[index - 1].classList.add("icon-src"); // Tambahkan kelas CSS untuk animasi
-  }
+  };
 
   // Menambahkan event listener untuk setiap elemen koleksi
   elements.collectionItems.forEach((item) => {
@@ -176,9 +176,44 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   skillSubWrapper.skillCard.forEach((item) => {
-    item.addEventListener("mouseenter", mouseEnter2 );
-    item.addEventListener("mouseleave", mouseLeave2 );
+    item.addEventListener("mouseenter", mouseEnter2);
+    item.addEventListener("mouseleave", mouseLeave2);
   });
 
   // <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada skill-card item}
+  let skillCards = document.querySelectorAll(".skill-card");
+
+  function changeWidthOnScroll() {
+    let scrollVal = window.pageYOffset;
+    let scrollSlow = scrollVal / 4;
+
+    skillCards.forEach((card) => {
+      if (scrollVal > 0) {
+        card.style.width = Math.min(Math.max(scrollSlow, 20), 100) + "%";
+      } else {
+        card.style.width = "20%"; // Lebar minimum saat scroll ke atas
+      }
+    });
+
+    console.log("Width updated:", skillCards[0].style.width); // Untuk memastikan width diubah
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      requestAnimationFrame(changeWidthOnScroll);
+    },
+    false
+  );
+
+  // Menjalankan fungsi untuk pertama kali saat halaman dimuat
+  changeWidthOnScroll();
+
+  // Menambahkan event listener untuk menjalankan fungsi ketika memasuki section dengan id "s4"
+  document.addEventListener("DOMContentLoaded", function () {
+    const section = document.getElementById("s4");
+    section.addEventListener("mouseenter", function () {
+      changeWidthOnScroll();
+    });
+  });
 });
