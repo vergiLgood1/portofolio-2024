@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navBottom = document.getElementById("navBottom");
   const scrollText = document.getElementById("scrollText");
+  
+ 
 
   // Linktree button click
   document
@@ -50,33 +52,64 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Animate scroll marque
-  const scrollers = document.querySelectorAll(".scroller");
+   // {Awal fungsi untuk menangani animated marquee} -------------------------------->
 
+  // Animate scroll marque
+  const scrollers1 = document.querySelectorAll(".scroller1");
   // If a user hasn't opted in for recuded motion, then we add the animation
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    addAnimation();
+    addAnimation1();
   }
 
-  function addAnimation() {
-    scrollers.forEach((scroller) => {
+  function addAnimation1() {
+    scrollers1.forEach((scroller1) => {
       // add data-animated="true" to every `.scroller` on the page
-      scroller.setAttribute("data-animated", true);
+      scroller1.setAttribute("data-animated", true);
 
       // Make an array from the elements within `.scroller-inner`
-      const scrollerInner = scroller.querySelector(".scroller__inner");
-      const scrollerContent = Array.from(scrollerInner.children);
+      const scrollerInner1 = scroller1.querySelector(".scroller__inner1");
+      const scrollerContent1 = Array.from(scrollerInner1.children);
 
       // For each item in the array, clone it
       // add aria-hidden to it
       // add it into the `.scroller-inner`
-      scrollerContent.forEach((item) => {
+      scrollerContent1.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
         duplicatedItem.setAttribute("aria-hidden", true);
-        scrollerInner.appendChild(duplicatedItem);
+        scrollerInner1.appendChild(duplicatedItem);
       });
     });
   }
+
+const scrollers2 = document.querySelectorAll(".scroller2");
+
+// If a user hasn't opted in for recuded motion, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation2();
+}
+
+function addAnimation2() {
+  scrollers2.forEach((scroller2) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller2.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner2 = scroller2.querySelector(".scroller__inner2");
+    const scrollerContent2 = Array.from(scrollerInner2.children);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent2.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner2.appendChild(duplicatedItem);
+    });
+  });
+}
+
+
+  // <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada collection item}
 
   // {Awal fungsi untuk menangani mouse hover pada collection item} -------------------------------->
 

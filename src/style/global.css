@@ -251,8 +251,8 @@ nav {
 }
 
 .animate-marquee3 {
-  animation: marquee3 10s linear infinite;
-  -webkit-animation: marquee3 10s linear infinite;
+  animation: marquee3 15s linear infinite;
+  -webkit-animation: marquee3 15s linear infinite;
 }
 
 @keyframes marquee {
@@ -274,13 +274,14 @@ nav {
     transform: translateX(0%);
   }
 }
+
 @keyframes marquee3 {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
 
   100% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 
@@ -606,30 +607,34 @@ nav {
 }
 
 /* Animasi untuk marquee */
-.scroller[data-animated="true"] {
+.scroller1[data-animated="true"] {
   overflow: hidden;
 }
 
-.scroller[data-animated="true"] .scroller__inner {
+.scroller1[data-animated="true"] .scroller__inner1 {
   width: max-content;
   flex-wrap: nowrap;
   animation: scrolling linear;
   animation-timeline: scroll(root);
 }
 
-.scroller[data-direction="right"] {
+.scroller1[data-direction="right"] {
   --_animation-direction: reverse;
 }
 
-.scroller[data-direction="left"] {
+.scroller1[data-direction="left"] {
   --_animation-direction: forwards;
 }
 
-.scroller[data-speed="fast"] {
+.scroller1[data-speed="fast"] {
   --_animation-duration: 10s;
 }
 
-.scroller[data-speed="slow"] {
+.scroller1[data-speed="superfast"] {
+  --_animation-duration: 1s;
+}
+
+.scroller1[data-speed="slow"] {
   --_animation-duration: 90s;
 }
 
@@ -640,6 +645,55 @@ nav {
     -moz-transform: translate(calc(-40% - 0.5rem));
     -ms-transform: translate(calc(-40% - 0.5rem));
     -o-transform: translate(calc(-40% - 0.5rem));
+  }
+}
+
+.scroller2 {
+  max-width: auto;
+}
+
+.scroller__inner2 {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller2[data-animated="true"] {
+  overflow: hidden;
+ 
+}
+
+.scroller2[data-animated="true"] .scroller__inner2 {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll2 var(--_animation-duration, 40s)    var(--_animation-direction, forwards) linear infinite;
+  -webkit-animation: scroll2 var(--_animation-duration, 40s)    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller2[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller2[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller2[data-speed="fast"] {
+  --_animation-duration: 10s;
+}
+
+.scroller2[data-speed="superfast"] {
+  --_animation-duration: 5s;
+}
+
+.scroller2[data-speed="slow"] {
+  --_animation-duration: 20s;
+}
+
+@keyframes scroll2 {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
   }
 }
 
