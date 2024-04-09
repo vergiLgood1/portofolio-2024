@@ -27,8 +27,8 @@
     <nav id="navBottom"
       class="bg-natural-500 bottom-4 w-96 fixed left-1/2 -translate-x-1/2 items-center rounded-lg z-50 hidden">
       <div class="max-2-screen-xs flex flex-wrap items-center justify-between mx-2 p-3">
-        <div class="brand flex items-center space-x-4 rtl:space-x-reverse"> <img
-            src="/src/assets/svg-content/logo.svg" alt="diyoLogo" class="w-8 brand">
+        <div class="brand flex items-center space-x-4 rtl:space-x-reverse"> <img src="/src/assets/svg-content/logo.svg"
+            alt="diyoLogo" class="w-8 brand">
           <div class="navlink items-center justify-between ">
 
             <a href="" class="text-xs mx-4 text-gray-200">About</a>
@@ -193,11 +193,11 @@
               <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-justify ">
                 <div id="" class="about-content-left col-span-1 row-span-3 ">
                   <h2 class="about-animated-heading overflow-hidden text-center">
-                    <span class="about-animation text-3xl md:text-6xl font-bold">A</span>
-                    <span class="about-animation text-3xl md:text-6xl font-bold">b</span>
-                    <span class="about-animation text-3xl md:text-6xl font-bold">o</span>
-                    <span class="about-animation text-3xl md:text-6xl font-bold">u</span>
-                    <span class="about-animation text-3xl md:text-6xl font-bold">t</span>
+                    <span class="about-animation text-white text-3xl md:text-6xl font-bold">A</span>
+                    <span class="about-animation text-white text-3xl md:text-6xl font-bold">b</span>
+                    <span class="about-animation text-white text-3xl md:text-6xl font-bold">o</span>
+                    <span class="about-animation text-white text-3xl md:text-6xl font-bold">u</span>
+                    <span class="about-animation text-white text-3xl md:text-6xl font-bold">t</span>
                   </h2>
                   <div class="about-animation-gif flex items-center justify-center">
                     <div class="flex items-center justify-center translate-y-20">
@@ -231,15 +231,14 @@
                     <div class="about-job-container">
                       <div class="">
                         <div class=" font-semibold my-4 text-lg md:text-xl">
-                          <p>My hobbies</p>
+                          <p class="text-white">My hobbies</p>
                         </div>
                         <div class="flex items-center mb-4 md:mb-6">
                           <div>
                             <img src="/src/assets/svg-content/Ps blue (1).svg" alt="" class="w-8 md:w-auto">
                           </div>
                           <div>
-                            <img src="/src/assets/svg-content/Spotify green (1).svg" alt=""
-                              class="w-8 mx-2 md:w-auto">
+                            <img src="/src/assets/svg-content/Spotify green (1).svg" alt="" class="w-8 mx-2 md:w-auto">
                           </div>
                           <div>
                             <img src="/src/assets/svg-content/netflic red (1).svg" alt="" class="w-8 md:w-auto">
@@ -248,7 +247,7 @@
                       </div>
                     </div>
                     <div class="education my-4 text-lg md:text-xl font-semibold">
-                      <p>Education & Experiences</p>
+                      <p class="text-white">Education & Experiences</p>
                     </div>
                     <div class="job-wrapper flex">
                       <div class="about-current-job flex items-start md:items-center md:mr-4">
@@ -739,8 +738,9 @@
                 <div class="anim-project__img-wrapper">
                   <div class="container">
                     <div class="anim-project__img">
-                      <img class="anim-project__img-img" src="/src/assets/image/siapKuliahMockups.png" alt="" />
+                      <img class="anim-project__img-img" src="/src/assets/image/modal1.png" alt="" />
                     </div>
+
                     <div class="anim-project__img">
                       <img class="anim-project__img-img" src="/src/assets/image/angkringanMockups.png" alt="" />
                     </div>
@@ -755,40 +755,143 @@
                 <div class="project-gallery__wrapper">
                   <div class="project" data-scroll="0">
                     <a href="/" class="project-link">
-                      <span class="project-title"> Lorem, ipsum. </span>
-                      <span class="project-details">Lorem, ipsum.</span>
+                      <div class="project-title flex justify-center items-center  ">
+                        <div class="icon-title border-r-2 border-black mr-4 pr-4">
+                          <svg width="23.51" height="31.56" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.96099 38.4347C3.96099 38.4347 1.49852 36.6385 4.45722 34.2431L11.346 28.0175C11.346 28.0175 13.3195 25.9196 15.4045 27.7486L79 76.386V99.7094C79 99.7094 78.9683 103.372 74.3167 102.969L3.96099 38.4347Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M20.3726 53.5656L3.75845 68.6553C3.75845 68.6553 2.05194 69.9233 3.75845 72.193L11.4716 79.2C11.4716 79.2 13.3034 81.1681 16.0124 78.9305L33.6208 65.587L20.3726 53.5656ZM49.5359 53.6905L80 30.4474L79.803 7.19447C79.803 7.19447 78.5021 2.11936 74.1616 4.76292L33.6208 41.6273L49.5359 53.6905Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M74.8892 102.695C76.6472 104.499 78.7797 103.907 78.7797 103.907L102.381 92.2638C105.403 90.2007 104.98 87.6423 104.98 87.6423V18.0993C104.98 15.0415 101.856 13.9863 101.856 13.9863L81.3983 4.11214C76.9291 1.34581 74 4.61154 74 4.61154C74 4.61154 77.7643 1.89597 79.6083 7.03484V98.9868C79.6083 99.6196 79.4739 100.239 79.2051 100.799C78.6675 101.89 77.4955 102.903 74.6942 102.478L74.8892 102.695Z" fill="white" stroke="black" stroke-width="6"/>
+                            </svg>                            
+                        </div>
+                         Wizz <span> — </span> Wedding Organizer 
+                      </div>
+                      <div class="project-details border rounded-lg border-black p-2 flex justify-center items-center text-[12px] font-bold uppercase"><svg 
+                        width="15" height="15" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-2">
+                        <path
+                          d="M7.25 6H8.125C8.22446 6 8.31984 6.03951 8.39017 6.10983C8.46049 6.18016 8.5 6.27554 8.5 6.375V10.625C8.5 10.7245 8.46049 10.8198 8.39017 10.8902C8.31984 10.9605 8.22446 11 8.125 11H1.375C1.27554 11 1.18016 10.9605 1.10983 10.8902C1.03951 10.8198 1 10.7245 1 10.625V6.375C1 6.27554 1.03951 6.18016 1.10983 6.10983C1.18016 6.03951 1.27554 6 1.375 6H2.25M7.25 6V3.5C7.25 2.66688 6.75 1 4.75 1C2.75 1 2.25 2.66688 2.25 3.5V6M7.25 6H2.25"
+                          stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Click For Details</div>
                     </a>
                   </div>
                   <div class="project" data-scroll="1">
                     <a href="/" class="project-link">
-                      <span class="project-title"> Lorem, ipsum. </span>
-                      <span class="project-details">Lorem, ipsum.</span>
+                      <div class="project-title flex justify-center items-center  ">
+                        <div class="icon-title border-r-2 border-black mr-4 pr-4">
+                          <svg width="23.51" height="31.56" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.96099 38.4347C3.96099 38.4347 1.49852 36.6385 4.45722 34.2431L11.346 28.0175C11.346 28.0175 13.3195 25.9196 15.4045 27.7486L79 76.386V99.7094C79 99.7094 78.9683 103.372 74.3167 102.969L3.96099 38.4347Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M20.3726 53.5656L3.75845 68.6553C3.75845 68.6553 2.05194 69.9233 3.75845 72.193L11.4716 79.2C11.4716 79.2 13.3034 81.1681 16.0124 78.9305L33.6208 65.587L20.3726 53.5656ZM49.5359 53.6905L80 30.4474L79.803 7.19447C79.803 7.19447 78.5021 2.11936 74.1616 4.76292L33.6208 41.6273L49.5359 53.6905Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M74.8892 102.695C76.6472 104.499 78.7797 103.907 78.7797 103.907L102.381 92.2638C105.403 90.2007 104.98 87.6423 104.98 87.6423V18.0993C104.98 15.0415 101.856 13.9863 101.856 13.9863L81.3983 4.11214C76.9291 1.34581 74 4.61154 74 4.61154C74 4.61154 77.7643 1.89597 79.6083 7.03484V98.9868C79.6083 99.6196 79.4739 100.239 79.2051 100.799C78.6675 101.89 77.4955 102.903 74.6942 102.478L74.8892 102.695Z" fill="white" stroke="black" stroke-width="6"/>
+                            </svg>                            
+                        </div>
+                         Wizz <span> — </span> Wedding Organizer 
+                      </div>
+                      <div class="project-details border rounded-lg border-black p-2 flex justify-center items-center text-[12px] font-bold uppercase"><svg 
+                        width="15" height="15" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-2">
+                        <path
+                          d="M7.25 6H8.125C8.22446 6 8.31984 6.03951 8.39017 6.10983C8.46049 6.18016 8.5 6.27554 8.5 6.375V10.625C8.5 10.7245 8.46049 10.8198 8.39017 10.8902C8.31984 10.9605 8.22446 11 8.125 11H1.375C1.27554 11 1.18016 10.9605 1.10983 10.8902C1.03951 10.8198 1 10.7245 1 10.625V6.375C1 6.27554 1.03951 6.18016 1.10983 6.10983C1.18016 6.03951 1.27554 6 1.375 6H2.25M7.25 6V3.5C7.25 2.66688 6.75 1 4.75 1C2.75 1 2.25 2.66688 2.25 3.5V6M7.25 6H2.25"
+                          stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Click For Details</div>
                     </a>
                   </div>
                   <div class="project" data-scroll="2">
                     <a href="/" class="project-link">
-                      <span class="project-title"> Lorem, ipsum. </span>
-                      <span class="project-details">Lorem, ipsum.</span>
+                      <div class="project-title flex justify-center items-center  ">
+                        <div class="icon-title border-r-2 border-black mr-4 pr-4">
+                          <svg width="23.51" height="31.56" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.96099 38.4347C3.96099 38.4347 1.49852 36.6385 4.45722 34.2431L11.346 28.0175C11.346 28.0175 13.3195 25.9196 15.4045 27.7486L79 76.386V99.7094C79 99.7094 78.9683 103.372 74.3167 102.969L3.96099 38.4347Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M20.3726 53.5656L3.75845 68.6553C3.75845 68.6553 2.05194 69.9233 3.75845 72.193L11.4716 79.2C11.4716 79.2 13.3034 81.1681 16.0124 78.9305L33.6208 65.587L20.3726 53.5656ZM49.5359 53.6905L80 30.4474L79.803 7.19447C79.803 7.19447 78.5021 2.11936 74.1616 4.76292L33.6208 41.6273L49.5359 53.6905Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M74.8892 102.695C76.6472 104.499 78.7797 103.907 78.7797 103.907L102.381 92.2638C105.403 90.2007 104.98 87.6423 104.98 87.6423V18.0993C104.98 15.0415 101.856 13.9863 101.856 13.9863L81.3983 4.11214C76.9291 1.34581 74 4.61154 74 4.61154C74 4.61154 77.7643 1.89597 79.6083 7.03484V98.9868C79.6083 99.6196 79.4739 100.239 79.2051 100.799C78.6675 101.89 77.4955 102.903 74.6942 102.478L74.8892 102.695Z" fill="white" stroke="black" stroke-width="6"/>
+                            </svg>                            
+                        </div>
+                         Wizz <span> — </span> Wedding Organizer 
+                      </div>
+                      <div class="project-details border rounded-lg border-black p-2 flex justify-center items-center text-[12px] font-bold uppercase"><svg 
+                        width="15" height="15" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-2">
+                        <path
+                          d="M7.25 6H8.125C8.22446 6 8.31984 6.03951 8.39017 6.10983C8.46049 6.18016 8.5 6.27554 8.5 6.375V10.625C8.5 10.7245 8.46049 10.8198 8.39017 10.8902C8.31984 10.9605 8.22446 11 8.125 11H1.375C1.27554 11 1.18016 10.9605 1.10983 10.8902C1.03951 10.8198 1 10.7245 1 10.625V6.375C1 6.27554 1.03951 6.18016 1.10983 6.10983C1.18016 6.03951 1.27554 6 1.375 6H2.25M7.25 6V3.5C7.25 2.66688 6.75 1 4.75 1C2.75 1 2.25 2.66688 2.25 3.5V6M7.25 6H2.25"
+                          stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Click For Details</div>
                     </a>
                   </div>
                   <div class="project" data-scroll="3">
                     <a href="/" class="project-link">
-                      <span class="project-title"> Lorem, ipsum. </span>
-                      <span class="project-details">Lorem, ipsum.</span>
+                      <div class="project-title flex justify-center items-center  ">
+                        <div class="icon-title border-r-2 border-black mr-4 pr-4">
+                          <svg width="23.51" height="31.56" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.96099 38.4347C3.96099 38.4347 1.49852 36.6385 4.45722 34.2431L11.346 28.0175C11.346 28.0175 13.3195 25.9196 15.4045 27.7486L79 76.386V99.7094C79 99.7094 78.9683 103.372 74.3167 102.969L3.96099 38.4347Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M20.3726 53.5656L3.75845 68.6553C3.75845 68.6553 2.05194 69.9233 3.75845 72.193L11.4716 79.2C11.4716 79.2 13.3034 81.1681 16.0124 78.9305L33.6208 65.587L20.3726 53.5656ZM49.5359 53.6905L80 30.4474L79.803 7.19447C79.803 7.19447 78.5021 2.11936 74.1616 4.76292L33.6208 41.6273L49.5359 53.6905Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M74.8892 102.695C76.6472 104.499 78.7797 103.907 78.7797 103.907L102.381 92.2638C105.403 90.2007 104.98 87.6423 104.98 87.6423V18.0993C104.98 15.0415 101.856 13.9863 101.856 13.9863L81.3983 4.11214C76.9291 1.34581 74 4.61154 74 4.61154C74 4.61154 77.7643 1.89597 79.6083 7.03484V98.9868C79.6083 99.6196 79.4739 100.239 79.2051 100.799C78.6675 101.89 77.4955 102.903 74.6942 102.478L74.8892 102.695Z" fill="white" stroke="black" stroke-width="6"/>
+                            </svg>                            
+                        </div>
+                         Wizz <span> — </span> Wedding Organizer 
+                      </div>
+                      <div class="project-details border rounded-lg border-black p-2 flex justify-center items-center text-[12px] font-bold uppercase"><svg 
+                        width="15" height="15" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-2">
+                        <path
+                          d="M7.25 6H8.125C8.22446 6 8.31984 6.03951 8.39017 6.10983C8.46049 6.18016 8.5 6.27554 8.5 6.375V10.625C8.5 10.7245 8.46049 10.8198 8.39017 10.8902C8.31984 10.9605 8.22446 11 8.125 11H1.375C1.27554 11 1.18016 10.9605 1.10983 10.8902C1.03951 10.8198 1 10.7245 1 10.625V6.375C1 6.27554 1.03951 6.18016 1.10983 6.10983C1.18016 6.03951 1.27554 6 1.375 6H2.25M7.25 6V3.5C7.25 2.66688 6.75 1 4.75 1C2.75 1 2.25 2.66688 2.25 3.5V6M7.25 6H2.25"
+                          stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Click For Details</div>
                     </a>
                   </div>
+                  <div class="project" data-scroll="4">
+                    <a href="/" class="project-link">
+                      <div class="project-title flex justify-center items-center  ">
+                        <div class="icon-title border-r-2 border-black mr-4 pr-4">
+                          <svg width="23.51" height="31.56" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.96099 38.4347C3.96099 38.4347 1.49852 36.6385 4.45722 34.2431L11.346 28.0175C11.346 28.0175 13.3195 25.9196 15.4045 27.7486L79 76.386V99.7094C79 99.7094 78.9683 103.372 74.3167 102.969L3.96099 38.4347Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M20.3726 53.5656L3.75845 68.6553C3.75845 68.6553 2.05194 69.9233 3.75845 72.193L11.4716 79.2C11.4716 79.2 13.3034 81.1681 16.0124 78.9305L33.6208 65.587L20.3726 53.5656ZM49.5359 53.6905L80 30.4474L79.803 7.19447C79.803 7.19447 78.5021 2.11936 74.1616 4.76292L33.6208 41.6273L49.5359 53.6905Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M74.8892 102.695C76.6472 104.499 78.7797 103.907 78.7797 103.907L102.381 92.2638C105.403 90.2007 104.98 87.6423 104.98 87.6423V18.0993C104.98 15.0415 101.856 13.9863 101.856 13.9863L81.3983 4.11214C76.9291 1.34581 74 4.61154 74 4.61154C74 4.61154 77.7643 1.89597 79.6083 7.03484V98.9868C79.6083 99.6196 79.4739 100.239 79.2051 100.799C78.6675 101.89 77.4955 102.903 74.6942 102.478L74.8892 102.695Z" fill="white" stroke="black" stroke-width="6"/>
+                            </svg>                            
+                        </div>
+                         Wizz <span> — </span> Wedding Organizer 
+                      </div>
+                      <div class="project-details border rounded-lg border-black p-2 flex justify-center items-center text-[12px] font-bold uppercase"><svg 
+                        width="15" height="15" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-2">
+                        <path
+                          d="M7.25 6H8.125C8.22446 6 8.31984 6.03951 8.39017 6.10983C8.46049 6.18016 8.5 6.27554 8.5 6.375V10.625C8.05 10.7245 8.46049 10.8198 8.39017 10.8902C8.31984 10.9605 8.22446 11 8.125 11H1.375C1.27554 11 1.18016 10.9605 1.10983 10.8902C1.03951 10.8198 1 10.7245 1 10.625V6.375C1 6.27554 1.03951 6.18016 1.10983 6.10983C1.18016 6.03951 1.27554 6 1.375 6H2.25M7.25 6V3.5C7.25 2.66688 6.75 1 4.75 1C2.75 1 2.25 2.66688 2.25 3.5V6M7.25 6H2.25"
+                          stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Click For Details</div>
+                    </a>
+                  </div>
+                  <div class="project" data-scroll="5">
+                    <a href="/" class="project-link">
+                      <div class="project-title flex justify-center items-center  ">
+                        <div class="icon-title border-r-2 border-black mr-4 pr-4">
+                          <svg width="23.51" height="31.56" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.96099 38.4347C3.96099 38.4347 1.49852 36.6385 4.45722 34.2431L11.346 28.0175C11.346 28.0175 13.3195 25.9196 15.4045 27.7486L79 76.386V99.7094C79 99.7094 78.9683 103.372 74.3167 102.969L3.96099 38.4347Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M20.3726 53.5656L3.75845 68.6553C3.75845 68.6553 2.05194 69.9233 3.75845 72.193L11.4716 79.2C11.4716 79.2 13.3034 81.1681 16.0124 78.9305L33.6208 65.587L20.3726 53.5656ZM49.5359 53.6905L80 30.4474L79.803 7.19447C79.803 7.19447 78.5021 2.11936 74.1616 4.76292L33.6208 41.6273L49.5359 53.6905Z" fill="white" stroke="black" stroke-width="6"/>
+                            <path d="M74.8892 102.695C76.6472 104.499 78.7797 103.907 78.7797 103.907L102.381 92.2638C105.403 90.2007 104.98 87.6423 104.98 87.6423V18.0993C104.98 15.0415 101.856 13.9863 101.856 13.9863L81.3983 4.11214C76.9291 1.34581 74 4.61154 74 4.61154C74 4.61154 77.7643 1.89597 79.6083 7.03484V98.9868C79.6083 99.6196 79.4739 100.239 79.2051 100.799C78.6675 101.89 77.4955 102.903 74.6942 102.478L74.8892 102.695Z" fill="white" stroke="black" stroke-width="6"/>
+                            </svg>                            
+                        </div>
+                         Wizz <span> — </span> Wedding Organizer 
+                      </div>
+                      <div class="project-details border rounded-lg border-black p-2 flex justify-center items-center text-[12px] font-bold uppercase"><svg 
+                        width="15" height="15" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-2">
+                        <path
+                          d="M7.25 6H8.125C8.22446 6 8.31984 6.03951 8.39017 6.10983C8.46049 6.18016 8.5 6.27554 8.5 6.375V10.625C8.5 10.7245 8.46049 10.8198 8.39017 10.8902C8.31984 10.9605 8.22446 11 8.125 11H1.375C1.27554 11 1.18016 10.9605 1.10983 10.8902C1.03951 10.8198 1 10.7245 1 10.625V6.375C1 6.27554 1.03951 6.18016 1.10983 6.10983C1.18016 6.03951 1.27554 6 1.375 6H2.25M7.25 6V3.5C7.25 2.66688 6.75 1 4.75 1C2.75 1 2.25 2.66688 2.25 3.5V6M7.25 6H2.25"
+                          stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      Click For Details</div>
+                    </a>
+                  </div>
+                  
                 </div>
               </div>
               <div class="spacer"></div>
               <!-- New project section -->
-              
+
             </div>
-            
+
           </div>
         </div>
-      </section>
-      
-      <section id="s4"
+    </section>
+
+    <section id="s4"
       class="mainMarquee2 relative z-20 h-auto min-h-0 bg-white rounded-0 top-0 bottom-0 overflow-visible">
       <div class="containerSkill p-4 bg-white ">
         <div class="row-skill">
@@ -816,8 +919,8 @@
             <div
               class="skill-sub-grid grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-1 sm:gap-x-2 sm:gap-y-8 md:grid-cols-2 md:gap-x-4 md:gap-y-4 grid-rows-auto grid-flow-row auto-cols-fr ">
               <a id="" href=""
-                class="skill-card card1 h-[12.5rem] sm:h-[18.5rem] md:h-[27.5rem] grid-cols-2 gap-x-2 gap-y-2 sm:gap-x-2 sm:gap-y-2 md:gap-x-4 md:gap-y-4 bg-blue-500 rounded-lg flex-col grid-rows-2 sm:grid-rows-2 md:grid-rows-2 justify-between p-5 flex relative overflow-hidden bg-cover bg-center">
-                <div class="card-content text-base sm:text-xl md:text-2xl font-semibold">
+                class="skill-card card1 h-[12.5rem] sm:h-[18.5rem] md:h-[27.5rem] grid-cols-2 gap-x-2 gap-y-2 sm:gap-x-2 sm:gap-y-2 md:gap-x-4 md:gap-y-4 bg-blue-500 rounded-lg flex-col grid-rows-2 sm:grid-rows-2 md:grid-rows-2 justify-between p-5 flex relative overflow-hidden bg-cover bg-center ">
+                <div class="card-content text-white text-base sm:text-xl md:text-2xl font-semibold ">
                   Siap Kuliah
                 </div>
                 <ul class="card-content-list gap-x-2 gap-y-2 flex-col items-start flex sm:flex md:hidden">
@@ -832,7 +935,7 @@
                   <img src="/src/assets/svg-content/figmaBg 1.svg" alt=""
                     class="w-[2rem] h-[2rem] sm:w-[4rem] sm:h-[4rem] md:w-[6rem] md:h-[6rem]">
                   <div
-                    class="card-content-footer w-auto text-2xl sm:text-4xl md:text-6xl font-medium mx-4 overflow-visible tracking-tighter leading-tight">
+                    class="card-content-footer w-auto text-white text-2xl sm:text-4xl md:text-6xl font-medium mx-4 overflow-visible tracking-tighter leading-tight">
                     Figma.</div>
                   <div class="card-content-overlay first-content">
 
@@ -841,7 +944,7 @@
               </a>
               <a id="" href=""
                 class="skill-card card2 h-[12.5rem] sm:h-[18.5rem] md:h-[27.5rem] grid-cols-2 gap-x-4 gap-y-4 bg-blue-500 rounded-lg flex-col grid-rows-2 justify-between p-5 flex relative overflow-hidden bg-cover bg-center">
-                <div class="card-content text-base sm:text-xl md:text-2xl font-semibold">
+                <div class="card-content text-white text-base sm:text-xl md:text-2xl font-semibold">
                   Wizz - Wedding Organizer
                 </div>
                 <ul class="card-content-list gap-x-2 gap-y-2 flex-col items-start flex sm:flex md:hidden">
@@ -856,7 +959,7 @@
                   <img src="/src/assets/svg-content/vsCodeBgBlack.svg" alt=""
                     class="w-[2rem] h-[2rem] sm:w-[4rem] sm:h-[4rem] md:w-[6rem] md:h-[6rem]">
                   <div
-                    class="card-content-footer w-auto text-2xl sm:text-4xl md:text-6xl font-medium mx-4 overflow-visible tracking-tighter leading-tight">
+                    class="card-content-footer w-auto text-white text-2xl sm:text-4xl md:text-6xl font-medium mx-4 overflow-visible tracking-tighter leading-tight">
                     Vs Code.</div>
                 </div>
               </a>
@@ -866,7 +969,7 @@
               class="skill-sub-grid grid sm:grid-cols-1 gap-x-4 gap-y-4 sm:gap-x-0 sm:gap-y-8 md:grid-cols-3 md:gap-x-4 md:gap-y-4 grid-rows-auto grid-flow-row auto-cols-fr">
               <a id="" href=""
                 class="skill-card card3 h-[12.5rem] sm:h-[18.5rem] md:h-[27.5rem] grid-cols-2 gap-x-4 gap-y-4 rounded-lg flex-col grid-rows-2 justify-between p-5 flex relative overflow-hidden bg-blue-500 ">
-                <div class="card-content text-base sm:text-xl md:text-2xl font-semibold">
+                <div class="card-content text-white text-base sm:text-xl md:text-2xl font-semibold">
                   SI Bengkel Restu
                 </div>
                 <ul class="card-content-list gap-x-2 gap-y-2 flex-col items-start flex">
@@ -881,13 +984,13 @@
                   <img src="/src/assets/svg-content/vscodeBgWhite.svg" alt=""
                     class="w-[2rem] h-[2rem] sm:w-[4rem] sm:h-[4rem] md:w-[6rem] md:h-[6rem]">
                   <div
-                    class="cardc-ontent-footer w-auto text-2xl sm:text-4xl md:text-6xl font-medium mx-4 overflow-visible tracking-tighter leading-tight">
+                    class="cardc-ontent-footer w-auto text-white text-2xl sm:text-4xl md:text-6xl font-medium mx-4 overflow-visible tracking-tighter leading-tight">
                     Vs code.</div>
                 </div>
               </a>
               <a id="" href=""
                 class="skill-card card4 h-[12.5rem] sm:h-[18.5rem] md:h-[27.5rem] grid-cols-2 gap-x-4 gap-y-4 bg-blue-500 rounded-lg flex-col grid-rows-2 justify-between p-5 flex relative overflow-hidden bg-cover bg-right">
-                <div class="card-content text-base sm:text-xl md:text-2xl font-semibold">
+                <div class="card-content text-white text-base sm:text-xl md:text-2xl font-semibold">
                   Ui Design Foodish
                 </div>
                 <ul class="card-content-list gap-x-2 gap-y-2 flex-col items-start flex">
@@ -902,13 +1005,13 @@
                   <img src="/src/assets/svg-content/figmaBgWhite.svg" alt=""
                     class="w-[2rem] h-[2rem] sm:w-[4rem] sm:h-[4rem] md:w-[6rem] md:h-[6rem]">
                   <div
-                    class="card-content-footer w-auto text-2xl sm:text-4xl md:text-6xl font-medium mx-4 overflow-visible tracking-tighter leading-tight">
+                    class="card-content-footer w-auto text-white text-2xl sm:text-4xl md:text-6xl font-medium mx-4 overflow-visible tracking-tighter leading-tight">
                     Figma.</div>
                 </div>
               </a>
               <a id="" href=""
                 class="skill-card card5 h-[12.5rem] sm:h-[18.5rem] md:h-[27.5rem] grid-cols-2 gap-x-4 gap-y-4 rounded-lg flex-col grid-rows-2 justify-between p-5 flex relative overflow-hidden bg-cover bg-center">
-                <div class="card-content text-base sm:text-xl md:text-2xl font-semibold">
+                <div class="card-content text-white text-base sm:text-xl md:text-2xl font-semibold">
                   Landing Page Angkringan
                 </div>
                 <ul class="card-content-list gap-x-2 gap-y-2 flex-col items-start flex">
@@ -923,7 +1026,7 @@
                   <img src="/src/assets/svg-content/vscodeBgWhite.svg" alt=""
                     class="w-[2rem] h-[2rem] sm:w-[4rem] sm:h-[4rem] md:w-[6rem] md:h-[6rem]">
                   <div
-                    class="card-content-footer w-auto text-2xl sm:text-4xl md:text-6xl font-medium mx-4 overflow-visible tracking-tighter leading-tight">
+                    class="card-content-footer w-auto text-white text-2xl sm:text-4xl md:text-6xl font-medium mx-4 overflow-visible tracking-tighter leading-tight">
                     Vs code.</div>
                 </div>
               </a>
@@ -960,9 +1063,9 @@
               <div class="my-12 hidden sm:hidden md:block">
                 <div
                   class="main-cta-row h-[100vh] flex gap-x-[5rem] gap-y-[5rem] border border-black rounded-xl flex-col justify-center items-start pl-16  pr-16 pb-24 relative right-[-1.5rem] bg-repeat bg-scroll ">
-                  <div class="heading-cta text-8xl font-semibold uppercase ">
-                    ALL You need IS <br />a
-                    <span class="">webflow</span><span> webflow</span> <br />site ↗
+                  <div class="heading-cta text-white text-8xl font-semibold uppercase ">
+                    PING Me If You Need <br />a
+                    <span class="">dinamic </span> or static<span> website ↗</span> <br />
                   </div>
                   <div id="catchme"
                     class="cursor-grab justify-center items-center flex absolute top-0 bottom-0 left-0 right-0 overflow-hidden">

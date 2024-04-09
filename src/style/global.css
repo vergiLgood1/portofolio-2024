@@ -169,9 +169,9 @@ body {
   --night: #111111;
   --coal: #282828;
   --color-white: hsl(0, 0%, 95%);
-  --color-white-shade: hsl(0, 0%, 90%);
+  --color-white-shade: #e6e6e6;
   --color-black: hsl(0, 0%, 5%);
-  --color-black-shade: hsl(0, 0%, 45%);
+  --color-black-shade: #737373;
   --color-bg: hsl(0, 0%, 92%);
   --color-img-wrapper-bg: hsl(0, 0%, 60%);
 
@@ -828,7 +828,7 @@ nav {
 
 .project-gallery {
   width: 100%;
-  min-height: 100dvh;
+  min-height: 10dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -841,8 +841,7 @@ nav {
   & .section-header {
     width: var(--section-width);
     text-align: left;
-    font-size: var(--fs-sm);
-    padding-inline: var(--p-inline);
+    font-size: 16px;
     color: var(--color-black);
   }
 
@@ -858,7 +857,7 @@ nav {
 .project {
   width: 100%;
   border-top: 1px solid var(--color-black);
-  padding-inline: var(--p-inline);
+  
   transition: padding-inline var(--transition-time) ease-in;
 
   & .project-link {
@@ -872,13 +871,44 @@ nav {
     
 
     & .project-title {
-      font-size: 2rem;
+      font-size: 24px;
     }
+
+    & .icon-title path{
+      fill: white;
+      stroke: black;
+    }
+
+    & .project-details path{
+      fill: none;
+    }
+
   }
 
   &:hover {
     padding-inline: var(--p-inline-hover);
-    color: var(--color-black-shade);
+    color: var(--color-white-shade);
+    background-color: var(--midnight-sea);
+    
+    &:hover .icon-title {
+      border-color: white;
+    }
+
+    &:hover .icon-title path{
+      stroke: white;
+      fill: none;
+    }
+
+    &:hover .project-details path{
+      stroke: var(--color-black);
+    }
+
+    &:hover .project-details {
+      border-color: var(--color-white);
+      background-color: var(--color-white);
+      color: var(--color-black);
+    }
+    
   }
 }
 
