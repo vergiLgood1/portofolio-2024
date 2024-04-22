@@ -213,41 +213,41 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // <-------------------------------- {Akhir fungsi untuk menangani mouse hover pada skill-card item}
-  let skillCards = document.querySelectorAll(".skill-card");
+  // let skillCards = document.querySelectorAll(".skill-card");
 
-  function changeWidthOnScroll() {
-    let scrollVal = window.pageYOffset;
-    let scrollSlow = scrollVal / 4;
+  // function changeWidthOnScroll() {
+  //   let scrollVal = window.pageYOffset;
+  //   let scrollSlow = scrollVal / 4;
 
-    skillCards.forEach((card) => {
-      if (scrollVal > 0) {
-        card.style.width = Math.min(Math.max(scrollSlow, 20), 100) + "%";
-      } else {
-        card.style.width = "20%"; // Lebar minimum saat scroll ke atas
-      }
-    });
+  //   skillCards.forEach((card) => {
+  //     if (scrollVal > 0) {
+  //       card.style.width = Math.min(Math.max(scrollSlow, 20), 100) + "%";
+  //     } else {
+  //       card.style.width = "20%"; // Lebar minimum saat scroll ke atas
+  //     }
+  //   });
 
-    console.log("Width updated:", skillCards[0].style.width); // Untuk memastikan width diubah
-  }
+  //   console.log("Width updated:", skillCards[0].style.width); // Untuk memastikan width diubah
+  // }
 
-  window.addEventListener(
-    "scroll",
-    function () {
-      requestAnimationFrame(changeWidthOnScroll);
-    },
-    false
-  );
+  // window.addEventListener(
+  //   "scroll",
+  //   function () {
+  //     requestAnimationFrame(changeWidthOnScroll);
+  //   },
+  //   false
+  // );
 
-  // Menjalankan fungsi untuk pertama kali saat halaman dimuat
-  changeWidthOnScroll();
+  // // Menjalankan fungsi untuk pertama kali saat halaman dimuat
+  // changeWidthOnScroll();
 
-  // Menambahkan event listener untuk menjalankan fungsi ketika memasuki section dengan id "s4"
-  document.addEventListener("DOMContentLoaded", function () {
-    const section = document.getElementById("s4");
-    section.addEventListener("mouseenter", function () {
-      changeWidthOnScroll();
-    });
-  });
+  // // Menambahkan event listener untuk menjalankan fungsi ketika memasuki section dengan id "s4"
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const section = document.getElementById("s4");
+  //   section.addEventListener("mouseenter", function () {
+  //     changeWidthOnScroll();
+  //   });
+  // });
 
   // {Awal fungsi untuk menangani pada new project section } -------------------------------->
 

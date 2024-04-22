@@ -968,8 +968,41 @@ nav {
   opacity: 0;
 }
 
-.marquee3 {
-  height: 0%;
+.marquee3-custom-text {
+  height: 0px;
 }
 
+.cursor-follower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  pointer-events: none; /* Agar tidak mengganggu interaksi dengan elemen lain */
+  z-index: 999; /* Pastikan elemen ini berada di atas elemen lain */
+  opacity: 0; /* Sembunyikan elemen saat tidak bergerak */
+  transition: opacity 0.3s ease-out; /* Efek transisi opacity */
+}
 
+/* #wrap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+.pill-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0;
+}
