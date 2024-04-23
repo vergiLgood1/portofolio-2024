@@ -782,6 +782,7 @@ nav {
   background-image: url(/src/assets/image/wizzMockups.png);
 }
 .skill-card.card3 {
+  background-image: url(/src/assets/image/BengkelExpertD.png);
 }
 
 .skill-card.card4 {
@@ -1006,3 +1007,11 @@ nav {
   z-index: 999;
   opacity: 0;
 }
+
+/* .content-left h1{
+  font-size: 40px;
+}
+
+.content-left {
+  row-gap: 16rem;
+} */
