@@ -322,5 +322,23 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", gsap.matchMediaRefresh());
 
   // <-------------------------------- {Akhir fungsi untuk menangani new project section}
-  
+
+  const time = document.querySelectorAll(".time");
+
+  const myClock = () => {
+    setTimeout(() => {
+      const d = new Date();
+      const h = d.getHours();
+      const m = d.getMinutes();
+      const ampm = h >= 12 ? "PM" : "AM"; // Menentukan AM atau PM berdasarkan jam
+      const hour12 = h % 12 || 12; // Mengonversi jam 24 ke format 12 jam
+
+      const timeString = `${hour12}:${m < 10 ? "0" : ""}${m} ${ampm}`; // Membuat string waktu
+
+      document.querySelector(".time").innerText = timeString;
+      myClock();
+    }, 1000);
+  };
+
+  myClock();
 });

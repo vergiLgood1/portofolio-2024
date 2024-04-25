@@ -24,7 +24,7 @@ module.exports = {
   },
   plugins: [],
 
-  purge: {
+  
     content: ["..."],
     options: {
       safelist: {
@@ -52,5 +52,4 @@ module.exports = {
         ],
       },
     },
-  },
 };
