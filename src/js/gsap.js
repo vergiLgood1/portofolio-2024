@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.to(".marquee3-custom-text", {
     scrollTrigger: {
       trigger: ".marquee3-custom-text", // Trigger animasi saat elemen dengan id "content" masuk viewport
-      start: "top 50%", // Mulai animasi saat elemen "content" mencapai 80% dari viewport
+      start: "top 90%", // Mulai animasi saat elemen "content" mencapai 80% dari viewport
       end: "bottom top", // Selesaikan animasi saat elemen "content" keluar dari atas viewport
       scrub: true, // Aktifkan efek smooth saat scroll
       markers: false, // Show markers for debugging
@@ -83,4 +83,20 @@ document.addEventListener("DOMContentLoaded", function () {
       "<+=2.5"
     );
   });
+
+  gsap.to(".footer", {
+    scrollTrigger: {
+      trigger: ".footer",
+      start: "80%", // Trigger animation when top of the element hits the bottom of the viewport
+      end: "bottom top", // Trigger animation when bottom of the element hits the top of the viewport
+      scrub: true, // Smooth animation effect
+      markers: false, // Show markers for debugging
+    },
+    opacity: 1, // Start with full opacity
+    onUpdate: function () {
+      // Update opacity based on scroll progress
+      gsap.set(".footer", { opacity: ScrollTrigger.progress });
+    },
+  });
+
 });
